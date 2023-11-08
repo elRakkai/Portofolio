@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Mochiy+Pop+One&family=Poppins:wght@300;400;500;600;800;900&display=swap');
+
+:root {
+    box-sizing: border-box;
+}
+
+html, body, * {
+    margin: 0;
+    padding: 0;
+}
+
+.BANTENG {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    background-color: yellow;
+}
+
+.judul {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    background-color: orange;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: gold;
+    font-family: 'Mochiy Pop One';
+    font-size: 30px;
+    font-weight: -100;
+}
+
+jj {
+    color: darkorange;
+}
+
+kk {
+    color: pink;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 300px;
+    width: auto;
+    left: 100px;
+    bottom: 170px;
+    size: 30px;
+    
+}
+
+
+.imgg {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 250px;
+    width: 400px;
+    right: 1px;
+    bottom: 170px;
+    animation: floatImage 4s ease-in-out infinite;
+
+}
+
+
+
+
+#app {
+    background-color: yellow;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 3px solid white;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    background-color: orange;
+}
+
+.line {
+    border-bottom: 1px solid #888;
+  }
+
+
+.games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option{   
+    width: 25%;
+    margin: 10px 15px;
+    padding: 25px;
+    background-color: orange;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10%;
+}
+    
+.option:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) ease-in-out;
+    background-color: darkorange;
+   
+}
+    
+
+
+.title {text-align: center;}
+
+
+/*BREAKPOINTS*/
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .services {
+        padding-bottom: 7rem;
+    }
+
+    .portofolio {
+        padding-bottom: 7rem;
+    }
+
+    .contact {
+        min-height: auto;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+        right: 4%;
+        position: absolute;
+    }
+    
+    .judul {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        background-color: orange;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        color: gold;
+        font-family: 'Mochiy Pop One';
+        font-size: 130%;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        height: 1px;
+        width: auto;
+        left: 1px;
+        bottom: 1px;
+        size: 1px;
+        opacity: 1%;
+        
+    }
+    
+    
+    .imgg {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        height: 1px;
+        width: auto;
+        left: 1px;
+        bottom: 1px;
+        size: 1px;
+        opacity: 1%;
+    }
+    
+
+    .summary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        border: 3px solid white;
+        height: 40%;
+        width: 80%;
+        text-align: center;
+        background-color: orange;
+        margin-top: 15%;
+    }
+
+    .games {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .option{   
+        width: 25%;
+        height: auto;
+        margin: 1% 1%;
+        padding: 4%;
+        background-color: orange;
+        text-align: center;
+        font-size: 30px;
+        border-radius: 10%;
+        margin-top: 10%
+    }
+        
+    .option:hover{
+        cursor: pointer;
+        transform: scale(110%);
+        transition: cubic-bezier(0.215, 0.610, 0.355, 1) ease-in-out;
+        background-color: darkorange;
+       
+    }
+        
+
+   
+}
+
+    .services-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding-bottom: 70px;
+    }
+
+
+@media (max-width: 617px) {
+    .portofolio-container {
+            grid-template-columns: 1fr;
+        }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 365px) {
+    .home-img img {
+        width: 90vw;
+    }
+
+    .about-img img {
+        width: 78vw;
+        margin-top: -40px;
+        height: auto;
+        animation: floatImage 4s ease-in-out infinite;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+}
